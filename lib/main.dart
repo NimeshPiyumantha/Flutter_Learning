@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  String buttonName = 'Click';
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,15 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('App Title'),
         ),
-        body: const Text('Body'),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              // buttonName = 'Clicked';
+              print('Print Massege');
+            },
+            child: Text(buttonName),
+          ),
+        ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
             BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
