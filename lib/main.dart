@@ -25,7 +25,9 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: ElevatedButton(
             onPressed: () {
-              buttonName = 'Clicked';
+              setState(() {
+                buttonName = 'Clicked';
+              });
             },
             child: Text(buttonName),
           ),
