@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -16,8 +17,10 @@ class MyApp extends StatelessWidget {
         ),
         body: const Text('Body'),
         bottomNavigationBar: BottomNavigationBar(
-          items: [
-            BottomNavigationBarItem(icon: icon)
+          items: const [
+            BottomNavigationBarItem(label: 'Home', icon: Icon(Icons.home)),
+            BottomNavigationBarItem(
+                label: 'Settings', icon: Icon(Icons.settings)),
           ],
         ),
       ),
