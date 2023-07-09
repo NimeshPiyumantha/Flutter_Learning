@@ -56,8 +56,8 @@ class _MyAppState extends State<MyApp> {
                     ],
                   ),
                 )
-              : Image.network(
-                  'https://i.pinimg.com/originals/72/47/f3/7247f32dedcabe39c7c9c8d06a483083.png'),
+              : Image.asset(
+                  'assets/images/bg.png'),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: const [
