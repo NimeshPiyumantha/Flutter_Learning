@@ -26,7 +26,8 @@ class _MyAppState extends State<MyApp> {
         body: Center(
             child: SizedBox(
           width: double.infinity,
-          child: Column(
+          height: double.infinity,
+          child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
