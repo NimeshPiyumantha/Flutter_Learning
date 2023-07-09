@@ -25,6 +25,8 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Center(
             child: Container(
+          width: double.infinity,
+          height: double.infinity,
           color: Colors.red,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
