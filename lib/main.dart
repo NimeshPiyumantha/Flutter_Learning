@@ -53,6 +53,7 @@ class SecondPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // automaticallyImplyLeading: false,
         title: const Text('Second Page'), // Custom title for the AppBar
       ),
       body: const Center(
