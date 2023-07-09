@@ -29,6 +29,7 @@ class MyAppExt extends StatefulWidget {
 class _MyAppExtState extends State<MyAppExt> {
   String buttonName = 'Click';
   int currentIndex = 0;
+  bool _isClicked = true;
 
   @override
   Widget build(BuildContext context) {
@@ -71,7 +72,15 @@ class _MyAppExtState extends State<MyAppExt> {
                   ],
                 ),
               )
-            : Image.asset('assets/images/bg.png'),
+            : GestureDetector(
+                onTap: () {
+                  setState(() {
+                    _isClicked = !_isClicked;
+                  });
+                },
+                child: _isClicked
+                    ? Image.asset('assets/images/bg.png')
+                    : Image.asset('assets/images/bg2.jpg')),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
